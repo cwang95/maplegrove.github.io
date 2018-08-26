@@ -1,3 +1,8 @@
+/* mobile sidebar */
+.sidebar{
+    display: none;
+}
+
 #wrapper{
     background-color: #2d7254 !important;
     /* background-color:#0E284C; */
@@ -22,7 +27,6 @@ img {
     max-height: 260px;
 }
 
-
 .sidebar {
     padding: 15px 5px 0 15px;
     font-size: 15px;
@@ -31,10 +35,11 @@ img {
     position: fixed;
     top: 0px;
     padding-top: 13px;
+    padding-right: 5px;
 }
-
-.property{
-    padding: 15px;
+.stickyNav{
+    position:fixed;
+    top: 0px;
 }
 
 h1 {
@@ -48,4 +53,18 @@ h2 {
 #content{
     background-color: white !important;
     padding-top: 15px;
+}
+
+#contentRight{
+    padding-left: 10px;
+}
+
+.description{
+    padding: 15px 35px 15px 15px;
+}
+
+@media screen and (min-width: 576px){
+    .sidebar{
+        display:block;
+    }
 }

@@ -41,7 +41,6 @@ function stick() {
   }
   if ( y>=sticky ) {
     sidebar.classList.add("sticky");
-    sidebar.classList.remove("stickyBottom");
     sidebar.style.width = width+"px";
   }
 }
